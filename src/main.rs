@@ -57,3 +57,15 @@ fn main() {
 
     println!("{:?}", john);
 }
+
+#[cfg(test)]
+mod tests {
+    // this brings everything from parent's scope into this scope
+    use super::*;
+
+    #[test]
+    fn it_creates() {
+        let test_person = Person::new("Dennis".to_owned());
+        assert_eq!(test_person.first_name, "Dennis");
+    }
+}
