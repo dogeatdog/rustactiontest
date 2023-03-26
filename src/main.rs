@@ -8,7 +8,7 @@ struct Person {
 impl Person {
     pub fn make_important() -> Self {
         Self {
-            first_name: "Important".to_owned(),
+            first_name: "VIP".to_owned(),
             last_name: "".to_owned(),
             age: 20,
         }
